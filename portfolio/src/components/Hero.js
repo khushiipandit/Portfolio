@@ -119,7 +119,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: "0.55s", animationFillMode: "both" }}>
               <Link to="/projects"
-                className="group px-7 py-3.5 font-medium rounded-full text-white flex items-center gap-2 transition-all duration-300 bg-gradient-to-r from-violet-600 via-purple-500 to-pink-500 hover:opacity-90 hover:shadow-[0_0_25px_rgba(168,85,247,0.5)]">
+                className="group px-7 py-3.5 font-medium rounded-full text-white flex items-center gap-2 transition-all duration-300 bg-gradient-to-r from-violet-600 via-purple-500 to-pink-500 border border-purple-400/50 hover:opacity-90 hover:shadow-[0_0_25px_rgba(168,85,247,0.5)]">
                 View My Work
                 <ExternalLink size={15} className="group-hover:rotate-12 transition-transform" />
               </Link>
@@ -150,25 +150,25 @@ export default function Hero() {
           <div className="flex-shrink-0 flex items-center justify-center animate-fade-in" style={{ animationDelay: "0.3s", animationFillMode: "both" }}>
             <div className="relative">
               {/* Layered glow blobs */}
-              <div className="absolute -inset-6 bg-violet-600/25 rounded-full blur-3xl" />
-              <div className="absolute -inset-4 bg-pink-500/15 rounded-full blur-2xl" />
+              <div className="absolute -inset-10 bg-violet-600/30 rounded-full blur-3xl" />
+              <div className="absolute -inset-6 bg-pink-500/20 rounded-full blur-2xl" />
 
               {/* Gradient border ring */}
-              <div className="relative p-[3px] rounded-full bg-gradient-to-br from-violet-500 via-pink-500 to-blue-500">
-                <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden bg-ink">
+              <div className="relative p-[4px] rounded-full bg-gradient-to-br from-violet-500 via-pink-500 to-blue-500">
+                <div className="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden bg-ink">
                   <img
                     src="/photo.jpeg"
                     alt="Khushi Pandit"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-top scale-110"
                   />
                 </div>
               </div>
 
               {/* Floating badges */}
-              <div className="absolute -bottom-4 -right-4 text-white text-xs font-mono px-4 py-2 rounded-full font-medium shadow-lg bg-gradient-to-r from-violet-600 to-pink-500">
+              <div className="absolute -bottom-5 -right-5 text-white text-xs font-mono px-4 py-2 rounded-full font-medium shadow-lg bg-gradient-to-r from-violet-600 to-pink-500">
                 8.0 CGPA ✦
               </div>
-              <div className="absolute -top-4 -left-4 bg-ink border border-purple-500/40 text-purple-300 text-xs font-mono px-3 py-1.5 rounded-full">
+              <div className="absolute -top-5 -left-5 bg-ink border border-purple-500/40 text-purple-300 text-xs font-mono px-3 py-1.5 rounded-full">
                 SIH Finalist
               </div>
             </div>
